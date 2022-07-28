@@ -14,6 +14,14 @@ A socket is one end-point of a two-way communication link between two programs r
 
 <br>
 
+## Definition: 
+
+<i> "A socket is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to." </i> 
+
+
+
+<br>
+
 ## This project is a Research - Java Multi Client Chat Application
 
 <br>
