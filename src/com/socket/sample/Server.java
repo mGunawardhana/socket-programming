@@ -26,6 +26,7 @@ public class Server implements Runnable {
     public Server() {
         connections = new ArrayList<>();
         done = false;
+        System.out.println("\nServer is booting...");
     }
 
     @Override
@@ -42,7 +43,7 @@ public class Server implements Runnable {
             }
 
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             shutdown();
         }
     }
@@ -84,6 +85,7 @@ public class Server implements Runnable {
 
         @Override
         public void run() {
+
             try {
 
                 out = new PrintWriter(client.getOutputStream(), true);
@@ -131,6 +133,7 @@ public class Server implements Runnable {
                 if (!client.isClosed()) {
                     client.close();
                 }
+                System.out.println("Server shutting down!");
             } catch (IOException ignored) {}
         }
     }
