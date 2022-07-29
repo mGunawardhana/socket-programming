@@ -56,7 +56,7 @@ public class Server implements Runnable {
         }
     }
 
-    public void shutdown() {
+    private void shutdown() {
         try {
             done = true;
             if (!server.isClosed()) {
