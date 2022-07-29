@@ -75,6 +75,8 @@ public class Server implements Runnable {
                             System.out.println(nickname + " renamed themselves to " + messageSplit[1]);
                             nickname = messageSplit[1];
                             out.println("Successfully changed nickname to " + nickname);
+                        }else {
+                            out.println("No nickname provided! ");
                         }
 
                     } else if (message.startsWith("/quit")) {
